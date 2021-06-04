@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "D:/Elektronika/FPGA/projekty/xilinx/lcd/lcd_example.xst" -ofn "D:/Elektronika/FPGA/projekty/xilinx/lcd/lcd_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-csg324-2 lcd_example.ngc lcd_example.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_example_map.ncd lcd_example.ngd lcd_example.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-csg324-2 lcd_example.ngc lcd_example.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_example_map.ncd lcd_example.ngd lcd_example.pcf 
+par -w -intstyle ise -ol high -mt off lcd_example_map.ncd lcd_example.ncd lcd_example.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_example.twx lcd_example.ncd -o lcd_example.twr lcd_example.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f lcd_example.ut lcd_example.ncd 
+xst -intstyle ise -ifn "D:/Elektronika/FPGA/projekty/xilinx/lcd/lcd_example.xst" -ofn "D:/Elektronika/FPGA/projekty/xilinx/lcd/lcd_example.syr" 
+xst -intstyle ise -ifn "D:/Elektronika/FPGA/projekty/xilinx/lcd/lcd_example.xst" -ofn "D:/Elektronika/FPGA/projekty/xilinx/lcd/lcd_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-csg324-2 lcd_example.ngc lcd_example.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_example_map.ncd lcd_example.ngd lcd_example.pcf 
+par -w -intstyle ise -ol high -mt off lcd_example_map.ncd lcd_example.ncd lcd_example.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_example.twx lcd_example.ncd -o lcd_example.twr lcd_example.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f lcd_example.ut lcd_example.ncd 

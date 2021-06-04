@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Elektronika\FPGA\projekty\xilinx\lcd\lcd_example.ncd
+OUTFILE=D:\Elektronika\FPGA\projekty\xilinx\lcd\lcd_example.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=D:\Elektronika\FPGA\projekty\xilinx\lcd
+LICENSE=WebPack
+USER_INFO=211646583_0_0_354

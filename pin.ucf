@@ -1,0 +1,13 @@
+NET "clk"			  	LOC = V10  | IOSTANDARD = LVCMOS33 | PERIOD = 100MHz;
+
+NET "rs"            	LOC = H17      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;   
+NET "rw"            	LOC = H18      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;   
+NET "e"            	LOC = J16      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;   
+NET "lcd_data[0]"            	LOC = J18      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;   
+NET "lcd_data[1]"            	LOC = K15     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST; 
+NET "lcd_data[2]"            	LOC = K16      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST; 
+NET "lcd_data[3]"            	LOC = L15     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST; 
+NET "lcd_data[4]"            	LOC = L16      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST; 
+NET "lcd_data[5]"            	LOC = R11      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST; 
+NET "lcd_data[6]"            	LOC = T11      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST; 
+NET "lcd_data[7]"            	LOC = R10     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST; 
